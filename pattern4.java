@@ -1,9 +1,9 @@
 public class pattern4{
     public static void main(String[] args) {
         int n=5;
-        for (int row = n; row >=1; row--) {
+        for (int row = 1;row<=n; row++) {
            
-            for (int star = 1  ; star <=row; star++) {
+            for (int col = 1  ; col <=n-row+1; col++) {
                 System.out.print("*"+ " ");
                 
             }
