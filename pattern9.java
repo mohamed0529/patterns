@@ -1,7 +1,7 @@
 public class pattern9 {
     public static void main(String[] args) {
         int n=5;
-        for(int i=0;i<n*2;i++){
+        for(int i=0;i<n*2-1;i++){
             if(i<=n-1){
                 for(int j=1;j<=n-i;j++){
                     System.out.print("* ");
@@ -14,21 +14,22 @@ public class pattern9 {
                 }
             }
             else{
-                for(int s=1;s<=i-n+1;s++){
+                
+                for(int s=0;s<=i-n+1;s++){
                     System.out.print("* ");
                 }
-                for(int m=1;m<2*n-i;m++){
+                for(int m=1;m<2*n-i-1;m++){
                     System.out.print("  ");
                     
 
                 }
-                for(int m=1;m<2*n-i;m++){
-
+                
+                for(int m=1;m<2*n-i-1;m++){
                     System.out.print("  ");
-
+                    
 
                 }
-                for(int s=1;s<=i-n+1;s++){
+                for(int s=0;s<=i-n+1;s++){
                     System.out.print("* ");
                 }
             }
